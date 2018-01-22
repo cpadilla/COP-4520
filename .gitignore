@@ -2,5 +2,10 @@
 */obj/*
 *.o
 
+
+*/Debug
+*/.vs
+*.vcxproj.filters
+
 *.depend
 *.layout
