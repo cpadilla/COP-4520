@@ -6,6 +6,7 @@
 */Debug
 */.vs
 *.vcxproj.filters
+*/x64
 
 *.depend
 *.layout
