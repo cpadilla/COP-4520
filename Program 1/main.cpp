@@ -1,6 +1,6 @@
 #include <iostream>
+#include <fstream>
 #include <thread>
-#include <sstream>
 #include <atomic>
 #include <math.h>
 #include <ctime>
@@ -10,7 +10,7 @@
 
 using namespace std;
 
-atomic_long number = 0;
+atomic_long number = 1;
 long counter;
 atomic<double> sum = 0;
 vector<long> primes;
@@ -60,7 +60,7 @@ bool prime(long n) {
 
 void run(int threadN){
 	long number = 0;
-	while ((number = getNextNumber()) <= 10000) {
+	while ((number = getNextNumber()) <= 100000000) {
 		if (prime(number)) {
 			incrementCounter();
 			addToSum(number);
@@ -85,15 +85,17 @@ int main()
         threads[i].join();
     }
 	int stop_s = clock();
-    cout << "Execution Time: " << (stop_s-start_s)/double(CLOCKS_PER_SEC) << endl;
-    cout << "Total Primes: " << counter << endl;
-    cout << "Sum of Primes: " << sum << endl;
-    cout << "Top 10 Primes:" << endl;
+	ofstream out;
+	out.open("primes.txt");
+    out << "Execution Time: " << (stop_s-start_s)/double(CLOCKS_PER_SEC) << endl;
+    out << "Total Primes: " << counter << endl;
+    out << "Sum of Primes: " << sum << endl;
+    out << "Top 10 Primes:" << endl;
 
 	for (int i = 0; i < (int) primes.size(); i++) {
 		long prime = primes[i];
-		cout << (i+1) << ". " << prime << endl;
+		out << (i+1) << ". " << prime << endl;
 	}
-	system("pause");
+	out.close();
     return 0;
 }

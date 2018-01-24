@@ -1,12 +1,15 @@
 */bin/*
 */obj/*
 *.o
+.vs
 
 
 */Debug
 */.vs
 *.vcxproj.filters
-*/x64
+*.vcxproj.user
+x64
+
 
 *.depend
 *.layout
