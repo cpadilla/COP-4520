@@ -10,9 +10,9 @@
 
 using namespace std;
 
-atomic_long number = 1;
+atomic_long number;
 long counter;
-atomic<double> sum = 0;
+atomic<double> sum;
 vector<long> primes;
 mutex store_mutex;
 
@@ -73,6 +73,9 @@ int main()
 {
 	// Start clock
 	int start_s = clock();
+
+	number = 1;
+	sum = 0;
 
 	// Start threads
     thread* threads = new thread[8];
