@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dining Philosophers v4", "D
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "COP4520 HW1", "Homework 1\COP4520 HW1.vcxproj", "{09B7E38B-EF5F-4E0C-A1E9-95475F300400}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Homework 2", "Homework 2\Homework 2.vcxproj", "{72F75588-22F7-417A-B6A4-E71623EA72AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{09B7E38B-EF5F-4E0C-A1E9-95475F300400}.Release|x64.Build.0 = Release|x64
 		{09B7E38B-EF5F-4E0C-A1E9-95475F300400}.Release|x86.ActiveCfg = Release|Win32
 		{09B7E38B-EF5F-4E0C-A1E9-95475F300400}.Release|x86.Build.0 = Release|Win32
+		{72F75588-22F7-417A-B6A4-E71623EA72AB}.Debug|x64.ActiveCfg = Debug|x64
+		{72F75588-22F7-417A-B6A4-E71623EA72AB}.Debug|x64.Build.0 = Debug|x64
+		{72F75588-22F7-417A-B6A4-E71623EA72AB}.Debug|x86.ActiveCfg = Debug|Win32
+		{72F75588-22F7-417A-B6A4-E71623EA72AB}.Debug|x86.Build.0 = Debug|Win32
+		{72F75588-22F7-417A-B6A4-E71623EA72AB}.Release|x64.ActiveCfg = Release|x64
+		{72F75588-22F7-417A-B6A4-E71623EA72AB}.Release|x64.Build.0 = Release|x64
+		{72F75588-22F7-417A-B6A4-E71623EA72AB}.Release|x86.ActiveCfg = Release|Win32
+		{72F75588-22F7-417A-B6A4-E71623EA72AB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

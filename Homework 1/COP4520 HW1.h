@@ -12,6 +12,3 @@
 #include <algorithm>
 #include <mutex>
 #include <stdio.h>
-
-Stack<int>* stack;
-mutex mtx;

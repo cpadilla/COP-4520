@@ -10,3 +10,20 @@ public:
 	Node<T>(T value);
 	~Node<T>();
 };
+
+template<class T>
+Node<T>::Node() {
+
+}
+
+template<class T>
+Node<T>::Node(T value)
+{
+	this->value = value;
+	//this->next = NULL;
+}
+
+template<class T>
+Node<T>::~Node() {
+
+}
