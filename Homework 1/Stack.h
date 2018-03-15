@@ -66,7 +66,7 @@ void Stack<T>::push(T x) {
 
 template<class T>
 bool Stack<T>::tryPush(Node<T>* node) {
-	Node<T>* oldTop = head;
+	Node<T>* oldTop = head.load();
 	node->next = oldTop;
 	return head.compare_exchange_weak(oldTop, node, memory_order_acquire);
 }
